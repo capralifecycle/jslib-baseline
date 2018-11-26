@@ -1,0 +1,26 @@
+{
+  "name": "jslib-baseline",
+  "version": "0.0.1",
+  "description": "Baseline for creating js libs",
+  "main": "lib/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "rimraf lib && microbundle -o lib -f cjs --name jslib-baseline --sourcemap false",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prettier": "prettier --config ./.prettierrc --write 'src/**/*.ts'"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "23.3.7",
+    "jest": "23.6.0",
+    "jest-each": "23.6.0",
+    "microbundle": "0.6.0",
+    "prettier": "1.14.3",
+    "rimraf": "2.6.2",
+    "ts-jest": "23.10.4",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0"
+  }
+}
