@@ -1,31 +1,10 @@
 {
   "extends": ["config:base"],
-  "packageRules": [
-    {
-      "groupName": "linting",
-      "packagePatterns": ["tslint", "prettier"],
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "groupName": "jest",
-      "packagePatterns": ["jest"],
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "groupName": "typescript",
-      "packagePatterns": ["typescript", "^@types/"],
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "groupName": "rimraf",
-      "packagePatterns": ["^rimraf$"],
-      "automerge": true,
-      "automergeType": "branch"
-    }
-  ],
+  "automerge": true,
+  "automergeType": "branch",
+  "major": {
+    "automerge": false
+  },
   "pin": {
     "automerge": true
   }
