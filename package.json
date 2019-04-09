@@ -2,18 +2,25 @@
   "name": "jslib-baseline",
   "version": "0.0.1",
   "description": "Baseline for creating js libs",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "source": "src/index.ts",
   "scripts": {
-    "build": "rimraf lib && microbundle -o lib -f cjs --name jslib-baseline --sourcemap false",
+    "build": "rimraf dist && microbundle",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "prettier": "prettier --config ./.prettierrc --write 'src/**/*.ts'"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capraconsulting/jslib-baseline"
+  },
+  "homepage": "https://github.com/capraconsulting/jslib-baseline",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jest": "24.0.11",
+    "@types/jest-each": "0.3.4",
     "jest": "24.7.1",
     "jest-each": "24.7.1",
     "microbundle": "0.11.0",
