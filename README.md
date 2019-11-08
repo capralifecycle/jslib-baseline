@@ -5,7 +5,8 @@
 Technologies:
 
 - Typescript
-- Microbundle
+- Rollup
 - Jest and jest-each
 - TSLint
 - Prettier
+- Semantic release
