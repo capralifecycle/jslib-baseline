@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/capraconsulting/jslib-baseline"
+    "url": "https://github.com/capralifecycle/jslib-baseline"
   },
-  "homepage": "https://github.com/capraconsulting/jslib-baseline",
+  "homepage": "https://github.com/capralifecycle/jslib-baseline",
   "license": "Apache-2.0",
   "devDependencies": {
     "@commitlint/cli": "17.6.1",
